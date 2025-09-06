@@ -3,24 +3,24 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const gallery = [
   {
-    src: "/images/memory1.jpg",
-    phrase: "The day we laughed until our cheeks hurt 💕",
+    src: "/gallery/favorite.png",
+    phrase: "The moment I couldn’t hold back my smile, I found myself staring at your photo all day, lost in thoughts of you. 💕",
   },
   {
-    src: "/images/memory2.jpg",
-    phrase: "Every moment with you feels like home ❤️",
+    src: "/gallery/burmese.png",
+    phrase: "You looks absolutely stunning in her Burmese dress. ❤️",
   },
   {
-    src: "/images/memory3.jpg",
-    phrase: "Six months of us, forever to go ✨",
+    src: "/gallery/sheMad.png",
+    phrase: "The way you gets mad at me… it’s unbelievably cute, and I can’t help but love you even more. ✨",
   },
   {
-    src: "/images/memory4.jpg",
-    phrase: "Our sweetest coffee date ☕💕",
+    src: "/gallery/nature2.png",
+    phrase: "Her beauty feels like a part of nature itself. ✨",
   },
   {
-    src: "/images/memory5.jpg",
-    phrase: "That sunset walk I’ll never forget 🌅",
+    src: "/gallery/myPrincess.png",
+    phrase: "My lovely princess, you make my world brighter with just a smile 🌅",
   },
 ];
 
@@ -31,11 +31,28 @@ export default function LovePage() {
     <div className="min-h-screen bg-pink-50 flex flex-col items-center">
       {/* Hero */}
       <section className="relative w-full h-[70vh] flex items-center justify-center bg-gradient-to-r from-pink-200 via-pink-100 to-pink-200">
+        <div className="absolute inset-0 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 overflow-hidden">
         <img
           src="/images/girlfriend.jpg"
           alt="My Love"
-          className="absolute inset-0 w-full h-full object-cover opacity-60"
+          className=" w-full h-full object-cover opacity-60"
         />
+        <img
+          src="/images/head2.png"
+          alt="My Love"
+          className="hidden lg:block w-full h-full object-cover opacity-60"
+        />
+        <img
+          src="/images/head3.png"
+          alt="My Love"
+          className="hidden md:block w-full h-full object-cover opacity-60"
+        />
+        <img
+          src="/images/nature.png"
+          alt="My Love"
+          className=" w-full h-full object-cover opacity-60"
+        />
+        </div>
         <div className="relative z-10 text-center p-6">
           <h1 className="text-4xl md:text-6xl font-bold text-pink-900 drop-shadow-lg">
             Happy 6th Monthsary, My Love 💖
@@ -53,8 +70,6 @@ export default function LovePage() {
           Six months ago, two hearts found each other. Since then, every day has been filled with warmth, laughter, and love. We’ve created countless memories, faced challenges hand-in-hand, and celebrated little victories that made us stronger. This page is a small gift, a reminder of how special you are to me, and how beautiful our journey together has been.
         </p>
       </section>
-
-      {/* Gallery */}
       <section className="w-full max-w-5xl py-12 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {gallery.map((item, i) => (
           <motion.div
@@ -118,7 +133,7 @@ export default function LovePage() {
 
       {/* Footer */}
       <footer className="w-full py-6 text-center text-pink-700">
-        <p>Made with ❤️ by You, for Her ✨</p>
+        <p>Made with ❤️ by Your lovely Man, for You ✨</p>
       </footer>
     </div>
   );
