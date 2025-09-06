@@ -8,7 +8,7 @@ const gallery = [
   },
   {
     src: "/gallery/burmese.png",
-    phrase: "You looks absolutely stunning in her Burmese dress. ❤️",
+    phrase: "You looks absolutely stunning in Burmese dress. ❤️",
   },
   {
     src: "/gallery/sheMad.png",
@@ -16,7 +16,7 @@ const gallery = [
   },
   {
     src: "/gallery/nature2.png",
-    phrase: "Her beauty feels like a part of nature itself. ✨",
+    phrase: "Your beauty feels like a part of nature itself. ✨",
   },
   {
     src: "/gallery/myPrincess.png",
